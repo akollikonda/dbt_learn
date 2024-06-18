@@ -32,5 +32,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   dbt_fundamentals:
     # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+    jaffle_shop:
+      staging:
+        +materialized: view
+    
+    jaffle_shop:
+      marts:
+        +materialized: table
