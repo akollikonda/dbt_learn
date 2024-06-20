@@ -1,6 +1,0 @@
-version: 2
-
-seeds:
-  - name: payments
-    config:
-      schema: stripe
